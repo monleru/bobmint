@@ -58,6 +58,7 @@ const getBlock = async () => {
                     setTimeout(() => res(null), 50)
                 })
             }
+            break
         }
         await sleep(0.5)
     }
