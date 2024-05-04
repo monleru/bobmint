@@ -4,6 +4,7 @@ import chalk from "chalk"
 import { BoB } from "./config"
 import { mintABI } from "./utils/mintAbi"
 import fs from 'fs'
+import { sleep } from "./utils/sleep"
 
 const log = console.log
 
@@ -58,6 +59,7 @@ const getBlock = async () => {
                 })
             }
         }
+        await sleep(0.5)
     }
 
 }
